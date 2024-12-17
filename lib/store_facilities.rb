@@ -28,7 +28,7 @@ class StoreFacilities
           phone: store_data[:phone]
         })
       else
-        print "Unable to read data"
+        "Unable to read data"
       end
     end
   end

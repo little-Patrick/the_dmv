@@ -66,7 +66,9 @@ RSpec.describe Facility do
         expect(@camaro.registration_date).to eq(Date.today)
         expect(@camaro.plate_type).to eq(:antique)
       end
-
+      it 'bolt' do
+        @facility_1.register_vehicle(@cruz)
+        @facility_1.register_vehicle(@camaro)
         @facility_1.register_vehicle(@bolt)
 
         expect(@bolt.registration_date).to eq(Date.today)
